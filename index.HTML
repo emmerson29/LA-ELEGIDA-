@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA ELEGIDA COCA MACHUCADA</title>
+    <link rel="stylesheet" href="ESTILO.CSS">
+</head>
+
+<body>
+
+<header class="encabezado">
+    <div class="logo">
+        <img src="logo.png.jpeg" alt="logo elegida">
+    </div>
+    <h1>LA ELEGIDA COCA MACHUCADA</h1>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#coca">Coca Machucada</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#pedido">Pedidos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="portada" id="inicio">
+    <div class="contenedor">
+        <h2>LA MEJOR COCA MACHUCADA PARA QUE
+             QUEDES BIEN TORCIDO 100% YUNGUEÑA DEL PRODUCTOR 
+            AL CONSUMIDOR </h2>
+
+
+        <p>
+            Bienvenidos a LA ELEGIDA COCA MACHUCADA.
+            Nuestra calidad de coca y productos  no se compara 
+            con ninguna,  DEL PRODUCTOR AL CONSUMIDOR 
+    , 100% yungueña desde el semillero del 
+            Futbol Boliviano CORIPATA, nuestra coca no se
+            compara con ninguna calidad somos la mejor 
+            COCA MACHUCADA DE LA PROVINCIA ASENCION DE GUARAYOS 
+            VEN POR LA TUYA!!!! PARA QUE QUEDES BIEN TORCIDO 
+        </p>
+    </div>
+</section>
+
+<main>
+
+    <section id="coca">
+        <h2>COCA MACHUCADA</h2>
+        <p>Conoce nuestros productos y su calidad.</p>
+    </section>
+
+    <section class="productos" id="productos">
+
+        <article class="card">
+            <img src="img1.jpeg" alt="Coca machucada">
+            <div class="card-content">
+                <h3>Primera calidad</h3>
+                <p>Coca machucada seleccionada.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="img2.jpeg" alt="Coca yungueña">
+            <div class="card-content">
+                <h3>Calidad especial</h3>
+                <p>Producto de excelente presentación.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="img3.jpeg" alt="Producto">
+            <div class="card-content">
+                <h3>Coca yungueña</h3>
+                <p>Calidad y tradición de los Yungas.</p>
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="img4.jpeg" alt="Producto">
+            <div class="card-content">
+                <h3>Otros productos</h3>
+                <p>Consulta por nuestros productos disponibles.</p>
+            </div>
+        </article>
+
+    </section>
+
+    <section class="pedido" id="pedido">
+
+        <h2>REALIZAR PEDIDO</h2>
+
+        <form id="formulario">
+
+            <label>Nombre completo:</label>
+            <input type="text" id="nombre"
+                   placeholder="Ingrese su nombre" required>
+
+            <label>Teléfono:</label>
+            <input type="tel" id="telefono"
+                   placeholder="Ingrese su teléfono"
+                   pattern="[0-9]{7,15}" required>
+        <!--SELECCION DE LA COCA-->
+<label>Seleccione la coca y su cantidad:</label>
+<div class="producto-pedido">
+    <div class="producto-fila">
+        <label>
+            <input type="checkbox" class="coca">
+            Primera calidad
+        </label>
+        <input type="number" class="cantidad"
+               min="1" placeholder="Cantidad" disabled>
+    </div>
+
+    <div class="producto-fila">
+        <label>
+            <input type="checkbox" class="coca">
+            Calidad especial
+        </label>
+        <input type="number" class="cantidad"
+               min="1" placeholder="Cantidad" disabled>
+    </div>
+
+    <div class="producto-fila">
+        <label>
+            <input type="checkbox" class="coca">
+            Coca yungueña
+        </label>
+        <input type="number" class="cantidad"
+               min="1" placeholder="Cantidad" disabled>
+        </div>
+
+</div>
+            <label>Forma de entrega:</label>
+            <select id="entrega" required>
+                <option value="">Seleccione una opción</option>
+                <option value="Recogida en tienda">
+                    Recogida en tienda
+                </option>
+                <option value="Entrega a domicilio">
+                    Entrega a domicilio
+                </option>
+            </select>
+
+            <div class="edad">
+                <input type="checkbox" id="mayor" required>
+                <label for="mayor">Confirmo que soy mayor de edad.</label>
+            </div>
+
+            <button type="submit">ENVIAR PEDIDO</button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+
+    <div class="footer-contenedor">
+
+        <div class="footer-columna">
+            <h3>LA ELEGIDA</h3>
+            <p>
+                CALIDAD 100% YUNGUEÑA, DEL PRODUCTOR AL AL CONSUMIDOR LA MEJOR COCA DE ASENCION DE GUARAYOS 
+            </p>
+        </div>
+
+        <div class="footer-columna">
+            <h3>NUESTROS CONTACTOS </h3>
+            <ul>
+                <li><a href="https://wa.me/qr/AC4MRSURO76SP1?s=v">NUESTRO WHATSAPP PARA TENER TU PEDIDO YA O LLAMA 74061202-67135277</a></li>
+                <li><a href="https://maps.app.goo.gl/aaYTNmb9gf2ae4h46?g_st=aw"> NUESTRA UBICACION O VEN A LA TIENDA FISICA EN PLENA CARRETERA A TRINIDAD KM 9 FRENTE A LA RESIDENCIAL "ASCENSION" </a></li>
+                <li><a href="https://www.tiktok.com/@laelegida172?_r=1&_t=ZS-9BLTfefcN6H">VISITA NUESTRO TIK TOK </a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-inferior">
+        <p>© 2026 LA ELEGIDA COCA MACHUCADA</p>
+    </div>
+
+</footer>
+
+<script src="FUNCIONES.js"></script>
+
+</body>
+</html>

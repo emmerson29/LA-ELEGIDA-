@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1e5;
+}
+
+/* ENCABEZADO */
+/* ENCABEZADO */
+.encabezado {
+    background-color: #24552b;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* LOGO A LA IZQUIERDA */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 24px;
+}
+
+/* MENÚ A LA DERECHA */
+.navbar {
+    background-color: #397b3c;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px 10px;
+}
+
+.nav-links a:hover {
+    background-color: #a6b85c;
+    color: #203c25;
+    border-radius: 5px;
+}
+/* ESTILO DE LOS CHEKBOX*/
+.producto-pedido {
+    margin-top: 15px;
+}
+
+.producto-fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #e1e9d2;
+    border-radius: 5px;
+}
+
+.producto-fila label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+}
+
+.producto-fila input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.producto-fila input[type="number"] {
+    width: 110px;
+    padding: 8px;
+}
+
+/* PORTADA */
+.contenedor {
+    width: min(1100px, 92%);
+    margin: auto;
+}
+
+.portada {
+    background: linear-gradient(135deg, #386b35, #a6b85c);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.portada h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.portada p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* PRODUCTOS */
+.productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: #24552b;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    width: 230px;
+    border: 2px solid #c5d5a0;
+    border-radius: 10px;
+    box-shadow: 0 5px 12px #999;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.card img:hover {
+    transform: scale(1.08);
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-content h3 {
+    color: #397b3c;
+    margin-bottom: 10px;
+}
+
+/* FORMULARIO */
+.pedido {
+    background-color: #e1e9d2;
+    padding: 30px 15px;
+}
+
+form {
+    background-color: white;
+    max-width: 450px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px #aaa;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input:not([type="checkbox"]),
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.edad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.edad label {
+    margin: 0;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    background-color: #397b3c;
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #24552b;
+}
+
+/* PIE DE PAGINA */
+.footer {
+    background-color: #203c25;
+    color: white;
+    padding: 35px 20px;
+}
+
+.footer-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-columna h3 {
+    color: #c5d98b;
+    margin-bottom: 15px;
+}
+
+.footer-columna p {
+    line-height: 1.5;
+}
+
+.footer-columna ul {
+    list-style: none;
+}
+
+.footer-columna li {
+    margin-bottom: 10px;
+}
+
+.footer-columna a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-columna a:hover {
+    color: #f4d35e;
+}
+
+.footer-inferior {
+    text-align: center;
+    border-top: 1px solid #777;
+    margin-top: 25px;
+    padding-top: 15px;
+}
+
+/* DISEÑO PARA CELULARES */
+@media (max-width: 600px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .portada h2 {
+        font-size: 23px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
